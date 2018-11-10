@@ -1,0 +1,5 @@
+Welcome!
+New Game  - n
+Load Game - l
+Help      - h
+Quit      - q
