@@ -1,5 +1,5 @@
 Welcome!
 New Game  - n
-Load Game - l
+Load Save - l
 Help      - h
 Quit      - q
