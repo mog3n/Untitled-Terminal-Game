@@ -1,13 +1,11 @@
 from game.game_state import GameState
+from game.game import play
 import pickle
 
 def new_game():
     print("NEW GAME")
     g = GameState()
-    print(g)
-    save = open("save.p", "wb+")
-    pickle.dump(g, save)
-    save.close()
+    play(g)
 
 def load_save():
     print("LOAD SAVE")
@@ -15,7 +13,7 @@ def load_save():
         save = open("save.p", "rb")
         g = pickle.load(save)
         save.close()
-        print(g)
+        play(g)
     except FileNotFoundError:
         print("NO SAVE FILE")
 
