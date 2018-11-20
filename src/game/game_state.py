@@ -1,7 +1,15 @@
+from game.factor import Factor
+
 class GameState:
 
     def __init__(self):
-        self._state = {"Rounds": 0}
+        self._rounds = 0
+        self._state = {"Circles": Factor(),
+                       "Wealth": Factor(),
+                       "Mentality": Factor()}
 
     def __str__(self):
-        return str(self._state)
+        str = "Rounds: {}\n".format(self._rounds)
+        for k in list(self._state.keys()):
+            str += "{}: {}\n".format(k, self._state[k])
+        return str
