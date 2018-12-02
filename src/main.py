@@ -9,10 +9,10 @@ def menu_display():
 def main():
     menu_display()
 
-    user_in = None
-    while(user_in != 'q'):
+    running = True
+    while(running):
         user_in = input('Enter: ')
-        menu_input(user_in)
+        running = menu_input(user_in)
 
 if(__name__ == '__main__'):
     main()

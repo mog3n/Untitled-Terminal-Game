@@ -34,7 +34,10 @@ def menu_input(i):
         help()
 
     elif(i == 'q'):
-        pass
+        print("QUITTING")
+        return False
 
     else:
         print("NOT AN OPTION")
+
+    return True
