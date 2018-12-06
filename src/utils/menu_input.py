@@ -4,7 +4,7 @@ import pickle
 
 def new_game():
     print("NEW GAME")
-    g = GameState()
+    g = GameState(3, 3, 3)
     play(g)
 
 def load_save():

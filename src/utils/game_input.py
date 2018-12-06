@@ -12,5 +12,9 @@ def game_input(i, g):
         print("QUITTING, BACK TO MAIN MENU")
         g.stop()
 
+    elif(i == 'y'):
+        print("ROUND PASSED")
+        g.round()
+
     else:
         print("NOT AN OPTION")
