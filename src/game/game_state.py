@@ -2,7 +2,6 @@ class GameState:
 
     def __init__(self, c, w, m):
         self._running = True
-        # May have user picked state before game some how
         self._state = {"Rounds": 0,
                        "Circles": c,
                        "Wealth": w,
